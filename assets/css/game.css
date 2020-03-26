@@ -33,7 +33,7 @@ main img {
     object-fit: contain;
     margin: 0;
     padding: 0;
-    transition: all linear 2s;
+    transition: all linear 3s;
 }
 
 #flyingBird2 {
@@ -43,7 +43,7 @@ main img {
     object-fit: contain;
     margin: 0;
     padding: 0;
-    transition: all linear 2s;
+    transition: all linear 3s;
 }
 
 #flyingBird3 {
@@ -53,7 +53,7 @@ main img {
     object-fit: contain;
     margin: 0;
     padding: 0;
-    transition: all linear 2s;
+    transition: all linear 3s;
 }
 
 #flyingBird2,

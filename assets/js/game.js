@@ -14,13 +14,13 @@ let TimeId1 = setInterval(() => {
 
         let horizontal = 0;
         let TimeID2 = setInterval(() => {
-            document.getElementById("flyingBird").style.left = horizontal + "%";
+            document.getElementById("flyingBird").style.left = horizontal + "vw";
             horizontal++;
-            if (horizontal == 95) {
+            if (horizontal == 97) {
                 document.getElementById("flyingBird").style.display = "none";
                 clearInterval(TimeID2)
             }
-        }, 100)
+        }, 250)
 
         if (i == 1000) {
             document.getElementById("flyingBird").style.display = "none";
@@ -61,13 +61,13 @@ let TimeId3 = setInterval(() => {
 
         let horizontal2 = 0;
         let TimeID4 = setInterval(() => {
-            document.getElementById("flyingBird2").style.left = horizontal2 + "%";
+            document.getElementById("flyingBird2").style.left = horizontal2 + "vw";
             horizontal2++;
-            if (horizontal2 == 95) {
+            if (horizontal2 == 97) {
                 document.getElementById("flyingBird2").style.display = "none";
                 clearInterval(TimeID4)
             }
-        }, 100)
+        }, 250)
 
         if (i2 == 1000) {
             document.getElementById("flyingBird2").style.display = "none";
@@ -109,13 +109,13 @@ let TimeId5 = setInterval(() => {
 
         let horizontal3 = 0;
         let TimeID6 = setInterval(() => {
-            document.getElementById("flyingBird3").style.left = horizontal3 + "%";
+            document.getElementById("flyingBird3").style.left = horizontal3 + "vw";
             horizontal3++;
-            if (horizontal3 == 95) {
+            if (horizontal3 == 97) {
                 document.getElementById("flyingBird3").style.display = "none";
                 clearInterval(TimeID6)
             }
-        }, 100)
+        }, 250)
 
         if (i3 == 1000) {
             document.getElementById("flyingBird3").style.display = "none";
@@ -126,7 +126,7 @@ let TimeId5 = setInterval(() => {
 
 document.getElementById("flyingBird3").addEventListener("click", () => {
     if (shotsleft > 0) {
-        PunktestandNeu = PunktestandNeu + 100;
+        PunktestandNeu = PunktestandNeu + 500;
         shotsleft = shotsleft - 1;
         document.getElementById("Ausgabe").innerHTML = PunktestandNeu;
         document.getElementById("flyingBird3").style.display = "none"
