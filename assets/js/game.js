@@ -10,11 +10,11 @@ let TimeId1 = setInterval(() => {
         document.getElementById("flyingBird").style.top = XAchse + "vh";
         i++;
 
-        let horizontal = Math.floor(Math.random() * 95);
+        let horizontal = Math.floor(Math.random() * 90);
         let TimeID2 = setInterval(() => {
             document.getElementById("flyingBird").style.left = horizontal + "vw";
             horizontal++;
-            if (horizontal == 95) {
+            if (horizontal == 90) {
                 document.getElementById("flyingBird").style.display = "none";
                 clearInterval(TimeID2)
             }
@@ -57,11 +57,11 @@ let TimeId3 = setInterval(() => {
         document.getElementById("flyingBird2").style.top = XAchse2 + "vh";
         i2++;
 
-        let horizontal2 = Math.floor(Math.random() * 95);
+        let horizontal2 = Math.floor(Math.random() * 90);
         let TimeID4 = setInterval(() => {
             document.getElementById("flyingBird2").style.left = horizontal2 + "vw";
             horizontal2++;
-            if (horizontal2 == 95) {
+            if (horizontal2 == 90) {
                 document.getElementById("flyingBird2").style.display = "none";
                 clearInterval(TimeID4)
             }
@@ -105,11 +105,11 @@ let TimeId5 = setInterval(() => {
         document.getElementById("flyingBird3").style.top = XAchse3 + "vh";
         i3++;
 
-        let horizontal3 = Math.floor(Math.random() * 95);
+        let horizontal3 = Math.floor(Math.random() * 90);
         let TimeID6 = setInterval(() => {
             document.getElementById("flyingBird3").style.left = horizontal3 + "vw";
             horizontal3++;
-            if (horizontal3 == 95) {
+            if (horizontal3 == 90) {
                 document.getElementById("flyingBird3").style.display = "none";
                 clearInterval(TimeID6)
             }
