@@ -16,7 +16,7 @@ let TimeId1 = setInterval(() => {
         let TimeID2 = setInterval(() => {
             document.getElementById("flyingBird").style.left = horizontal + "vw";
             horizontal++;
-            if (horizontal == 97) {
+            if (horizontal == 95) {
                 document.getElementById("flyingBird").style.display = "none";
                 clearInterval(TimeID2)
             }
@@ -63,7 +63,7 @@ let TimeId3 = setInterval(() => {
         let TimeID4 = setInterval(() => {
             document.getElementById("flyingBird2").style.left = horizontal2 + "vw";
             horizontal2++;
-            if (horizontal2 == 97) {
+            if (horizontal2 == 95) {
                 document.getElementById("flyingBird2").style.display = "none";
                 clearInterval(TimeID4)
             }
@@ -111,7 +111,7 @@ let TimeId5 = setInterval(() => {
         let TimeID6 = setInterval(() => {
             document.getElementById("flyingBird3").style.left = horizontal3 + "vw";
             horizontal3++;
-            if (horizontal3 == 97) {
+            if (horizontal3 == 95) {
                 document.getElementById("flyingBird3").style.display = "none";
                 clearInterval(TimeID6)
             }
