@@ -53,7 +53,7 @@ let TimeId3 = setInterval(() => {
     if (shotsleft < 1) {
         document.getElementById("flyingBird2").style.display = "none";
     } else {
-        let XAchse2 = Math.floor(Math.random() * 70);
+        let XAchse2 = Math.ceil(Math.random() * 70);
         document.getElementById("flyingBird2").style.display = "block";
         document.getElementById("flyingBird2").style.position = "absolute";
         document.getElementById("flyingBird2").style.top = XAchse2 + "vh";
