@@ -61,10 +61,25 @@ img {
 
 footer {
     height: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 #alpa2,
 #alpa3,
 #alpa4 {
     height: 20vh;
+}
+
+#alpha10 {
+    height: 4vh;
+}
+
+#zweiteSeite {
+    display: flex;
+}
+
+#zweiteSeite article div {
+    display: flex;
+    width: 40%;
 }
