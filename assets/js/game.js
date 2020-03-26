@@ -1,5 +1,3 @@
-
-
 // ----------------------------------------- Code für grünen Virus -----------------------------------------
 let i = 0;
 let TimeId1 = setInterval(() => {
@@ -12,7 +10,7 @@ let TimeId1 = setInterval(() => {
         document.getElementById("flyingBird").style.top = XAchse + "vh";
         i++;
 
-        let horizontal = 0;
+        let horizontal = Math.floor(Math.random() * 95);
         let TimeID2 = setInterval(() => {
             document.getElementById("flyingBird").style.left = horizontal + "vw";
             horizontal++;
@@ -59,7 +57,7 @@ let TimeId3 = setInterval(() => {
         document.getElementById("flyingBird2").style.top = XAchse2 + "vh";
         i2++;
 
-        let horizontal2 = 0;
+        let horizontal2 = Math.floor(Math.random() * 95);
         let TimeID4 = setInterval(() => {
             document.getElementById("flyingBird2").style.left = horizontal2 + "vw";
             horizontal2++;
@@ -107,7 +105,7 @@ let TimeId5 = setInterval(() => {
         document.getElementById("flyingBird3").style.top = XAchse3 + "vh";
         i3++;
 
-        let horizontal3 = 0;
+        let horizontal3 = Math.floor(Math.random() * 95);
         let TimeID6 = setInterval(() => {
             document.getElementById("flyingBird3").style.left = horizontal3 + "vw";
             horizontal3++;
