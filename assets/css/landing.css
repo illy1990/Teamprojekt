@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+
 header {
     height: 5vh;
+    text-align: center;
+    padding: 25px 0;
 }
 
 main {
@@ -15,11 +20,28 @@ main {
     width: 100%;
 }
 
-#flaggen {
-    display: grid;
-    width: 100vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+#Weltkarte {
+    height: 90vh;
+    background: url('/assets/img/Weltkarte.png') center no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#Flaggen {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    width: 50%;
+    margin: 10% auto;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
 }
 
 #zweiteSeite {
@@ -39,4 +61,10 @@ img {
 
 footer {
     height: 5vh;
+}
+
+#alpa2,
+#alpa3,
+#alpa4 {
+    height: 20vh;
 }
