@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 5vh;
+}
+
+main {
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr); */
+    height: 90vh;
+    width: 100%;
+}
+
+#flaggen {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#zweiteSeite {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+img {
+    width: 20%;
+}
+
+#alpa9 {
+    width: 40%;
+}
+
+footer {
+    height: 5vh;
+}
