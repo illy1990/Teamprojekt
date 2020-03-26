@@ -16,7 +16,7 @@ let TimeId1 = setInterval(() => {
         let TimeID2 = setInterval(() => {
             document.getElementById("flyingBird").style.left = horizontal + "%";
             horizontal++;
-            if (horizontal == 97) {
+            if (horizontal == 95) {
                 document.getElementById("flyingBird").style.display = "none";
                 clearInterval(TimeID2)
             }
@@ -57,13 +57,13 @@ let TimeId3 = setInterval(() => {
         document.getElementById("flyingBird2").style.display = "block";
         document.getElementById("flyingBird2").style.position = "absolute";
         document.getElementById("flyingBird2").style.top = XAchse2 + "vh";
-        i++;
+        i2++;
 
         let horizontal2 = 0;
         let TimeID4 = setInterval(() => {
             document.getElementById("flyingBird2").style.left = horizontal2 + "%";
             horizontal2++;
-            if (horizontal2 == 97) {
+            if (horizontal2 == 95) {
                 document.getElementById("flyingBird2").style.display = "none";
                 clearInterval(TimeID4)
             }
@@ -92,6 +92,53 @@ document.getElementById("flyingBird2").addEventListener("click", () => {
 
 
 // ----------------------------------------- Code für grauen Virus -----------------------------------------
+
+// ----------------------------------------- Code für roten Virus -----------------------------------------
+let i3 = 0;
+document.getElementById("flyingBird3").style.display = "block"
+
+let TimeId5 = setInterval(() => {
+    if (shotsleft < 1) {
+        document.getElementById("flyingBird3").style.display = "none";
+    } else {
+        let XAchse3 = Math.round(Math.random() * 70);
+        document.getElementById("flyingBird3").style.display = "block";
+        document.getElementById("flyingBird3").style.position = "absolute";
+        document.getElementById("flyingBird3").style.top = XAchse3 + "vh";
+        i3++;
+
+        let horizontal3 = 0;
+        let TimeID6 = setInterval(() => {
+            document.getElementById("flyingBird3").style.left = horizontal3 + "%";
+            horizontal3++;
+            if (horizontal3 == 95) {
+                document.getElementById("flyingBird3").style.display = "none";
+                clearInterval(TimeID6)
+            }
+        }, 100)
+
+        if (i3 == 1000) {
+            document.getElementById("flyingBird3").style.display = "none";
+            clearInterval(TimeId5)
+        }
+    }
+}, 1000)
+
+document.getElementById("flyingBird3").addEventListener("click", () => {
+    if (shotsleft > 0) {
+        PunktestandNeu = PunktestandNeu + 100;
+        shotsleft = shotsleft - 1;
+        document.getElementById("Ausgabe").innerHTML = PunktestandNeu;
+        document.getElementById("flyingBird3").style.display = "none"
+        ToilettenpapierEinblenden(shotsleft)
+    } else {
+        document.getElementById("flyingBird3").style.display = "none"
+        shotsleft = 0;
+        ToilettenpapierEinblenden(shotsleft)
+    }
+})
+
+// ----------------------------------------- Code für roten Virus -----------------------------------------
 
 // ----------------------------------------- global -----------------------------------------
 let PunktestandNeu = 0;
