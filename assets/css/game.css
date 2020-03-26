@@ -5,22 +5,24 @@
 
 main {
     width: 100%;
-    height: 87vh;
+    height: 92vh;
 }
 
 footer {
     width: 100%;
     height: 8vh;
+    display: flex;
 }
 
 footer h1 {
-    margin: 0px 50px;
-    padding: 15px 0px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
 }
 
 main img {
     width: 100%;
-    height: 87vh;
+    height: 92vh;
     object-fit: cover;
 }
 
@@ -28,8 +30,26 @@ main img {
     display: none;
     width: 7.5%;
     height: 15%;
-    object-fit: cover;
+    object-fit: center;
     margin: 0;
     padding: 0;
     transition: all linear 2s;
+}
+
+
+#flyingBird2,
+#flyingBird3 {
+    display: none;
+}
+
+.toilette {
+    height: 4vh;
+}
+
+#Ausgabe {
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
 }
