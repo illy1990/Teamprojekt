@@ -29,8 +29,16 @@ main img {
 #flyingBird {
     display: none;
     width: 7.5%;
-    height: 15%;
-    object-fit: center;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    transition: all linear 2s;
+}
+
+#flyingBird2 {
+    display: none;
+    width: 4%;
+    object-fit: contain;
     margin: 0;
     padding: 0;
     transition: all linear 2s;

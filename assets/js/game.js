@@ -6,7 +6,7 @@ let TimeId1 = setInterval(() => {
     if (shotsleft < 1) {
         document.getElementById("flyingBird").style.display = "none";
     } else {
-        let XAchse = Math.floor(Math.random() * 73);
+        let XAchse = Math.floor(Math.random() * 50);
         document.getElementById("flyingBird").style.display = "block";
         document.getElementById("flyingBird").style.position = "absolute";
         document.getElementById("flyingBird").style.top = XAchse + "vh";
@@ -46,7 +46,49 @@ document.getElementById("flyingBird").addEventListener("click", () => {
 // ----------------------------------------- Code für grünen Virus -----------------------------------------
 // ----------------------------------------- Code für grauen Virus -----------------------------------------
 
+let i2 = 0;
+document.getElementById("flyingBird2").style.display = "block"
 
+let TimeId3 = setInterval(() => {
+    if (shotsleft < 1) {
+        document.getElementById("flyingBird2").style.display = "none";
+    } else {
+        let XAchse2 = Math.floor(Math.random() * 50);
+        document.getElementById("flyingBird2").style.display = "block";
+        document.getElementById("flyingBird2").style.position = "absolute";
+        document.getElementById("flyingBird2").style.top = XAchse2 + "vh";
+        i++;
+
+        let horizontal2 = 0;
+        let TimeID4 = setInterval(() => {
+            document.getElementById("flyingBird2").style.left = horizontal2 + "%";
+            horizontal2++;
+            if (horizontal2 == 97) {
+                document.getElementById("flyingBird2").style.display = "none";
+                clearInterval(TimeID4)
+            }
+        }, 100)
+
+        if (i2 == 1000) {
+            document.getElementById("flyingBird2").style.display = "none";
+            clearInterval(TimeId3)
+        }
+    }
+}, 1000)
+
+document.getElementById("flyingBird2").addEventListener("click", () => {
+    if (shotsleft > 0) {
+        PunktestandNeu = PunktestandNeu + 100;
+        shotsleft = shotsleft - 1;
+        document.getElementById("Ausgabe").innerHTML = PunktestandNeu;
+        document.getElementById("flyingBird2").style.display = "none"
+        ToilettenpapierEinblenden(shotsleft)
+    } else {
+        document.getElementById("flyingBird2").style.display = "none"
+        shotsleft = 0;
+        ToilettenpapierEinblenden(shotsleft)
+    }
+})
 
 
 // ----------------------------------------- Code für grauen Virus -----------------------------------------
