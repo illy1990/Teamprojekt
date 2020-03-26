@@ -6,7 +6,7 @@ let TimeId1 = setInterval(() => {
     if (shotsleft < 1) {
         document.getElementById("flyingBird").style.display = "none";
     } else {
-        let XAchse = Math.floor(Math.random() * 50);
+        let XAchse = Math.floor(Math.random() * 70);
         document.getElementById("flyingBird").style.display = "block";
         document.getElementById("flyingBird").style.position = "absolute";
         document.getElementById("flyingBird").style.top = XAchse + "vh";
@@ -53,7 +53,7 @@ let TimeId3 = setInterval(() => {
     if (shotsleft < 1) {
         document.getElementById("flyingBird2").style.display = "none";
     } else {
-        let XAchse2 = Math.floor(Math.random() * 50);
+        let XAchse2 = Math.floor(Math.random() * 70);
         document.getElementById("flyingBird2").style.display = "block";
         document.getElementById("flyingBird2").style.position = "absolute";
         document.getElementById("flyingBird2").style.top = XAchse2 + "vh";
