@@ -1,8 +1,7 @@
-let PunktestandNeu = 0;
-let shotsleft = 10;
+
+
+// ----------------------------------------- Code für grünen Virus -----------------------------------------
 let i = 0;
-
-
 let TimeId1 = setInterval(() => {
     if (shotsleft < 1) {
         document.getElementById("flyingBird").style.display = "none";
@@ -32,46 +31,29 @@ let TimeId1 = setInterval(() => {
 
 document.getElementById("flyingBird").addEventListener("click", () => {
     if (shotsleft > 0) {
-        PunktestandNeu = PunktestandNeu + 100;
+        PunktestandNeu = PunktestandNeu + 50;
         shotsleft = shotsleft - 1;
         document.getElementById("Ausgabe").innerHTML = PunktestandNeu;
         document.getElementById("flyingBird").style.display = "none"
         ToilettenpapierEinblenden(shotsleft)
-        // document.getElementById("Restschusse").innerHTML = shotsleft;
     } else {
         document.getElementById("flyingBird").style.display = "none"
         shotsleft = 0;
         ToilettenpapierEinblenden(shotsleft)
-
-        // document.getElementById("Restschusse").innerHTML = shotsleft;
     }
 })
 
-// document.getElementById("daneben").addEventListener("click", () => {
-//     if (shotsleft > 0) {
-//         shotsleft = shotsleft - 1;
-//         document.getElementById("Restschusse").innerHTML = shotsleft;
-//     } else {
-//         document.getElementById("flyingBird").style.display = "none"
-//         shotsleft = 0;
-//         document.getElementById("Restschusse").innerHTML = shotsleft;
-//     }
-// })
+// ----------------------------------------- Code für grünen Virus -----------------------------------------
+// ----------------------------------------- Code für grauen Virus -----------------------------------------
 
-document.getElementById("daneben").addEventListener("click", () => {
-    if (shotsleft > 0) {
-        shotsleft = shotsleft - 1;
-        ToilettenpapierEinblenden(shotsleft)
 
-        // document.getElementById("Restschusse").innerHTML = shotsleft;
-    } else {
-        document.getElementById("flyingBird").style.display = "none"
-        shotsleft = 0;
-        ToilettenpapierEinblenden(shotsleft)
 
-        // document.getElementById("Restschusse").innerHTML = shotsleft;
-    }
-})
+
+// ----------------------------------------- Code für grauen Virus -----------------------------------------
+
+// ----------------------------------------- global -----------------------------------------
+let PunktestandNeu = 0;
+let shotsleft = 10;
 
 
 function ToilettenpapierEinblenden(shotsleft) {
@@ -99,4 +81,20 @@ function ToilettenpapierEinblenden(shotsleft) {
     return shotsleft;
 }
 
+
+document.getElementById("daneben").addEventListener("click", () => {
+    if (shotsleft > 0) {
+        shotsleft = shotsleft - 1;
+        ToilettenpapierEinblenden(shotsleft)
+
+        // document.getElementById("Restschusse").innerHTML = shotsleft;
+    } else {
+        document.getElementById("flyingBird").style.display = "none"
+        shotsleft = 0;
+        ToilettenpapierEinblenden(shotsleft)
+
+        // document.getElementById("Restschusse").innerHTML = shotsleft;
+    }
+})
+// ----------------------------------------- global -----------------------------------------
 
